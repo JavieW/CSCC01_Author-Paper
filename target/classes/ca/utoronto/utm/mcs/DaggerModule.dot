@@ -1,0 +1,8 @@
+digraph G1 {
+  concentrate = true;
+  APIHandler -> MongoDB;
+  App -> Config;
+  App -> APIHandler;
+  App -> HttpServer;
+  MongoDB -> MongoClient;
+}

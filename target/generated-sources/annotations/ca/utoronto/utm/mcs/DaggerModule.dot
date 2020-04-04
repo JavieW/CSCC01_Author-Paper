@@ -1,0 +1,9 @@
+digraph G1 {
+  concentrate = true;
+  APIHandler -> MongoDB;
+  App -> Config;
+  App -> APIHandler;
+  App -> HttpServer;
+  n2 [label="MongoCollection<org.bson.Document>"];
+  MongoDB -> n2;
+}
